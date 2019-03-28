@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="Assembly Source File">
+
+</language>
+<language name="C Source File">
+<includepath>${SDK_ROOT}/modules/nrfx/mdk</includepath>
+<includepath>${SDK_ROOT}/components/softdevice/s140/headers</includepath>
+<includepath>${SDK_ROOT}/components/ble/common</includepath>
+<includepath>${SDK_ROOT}/components/softdevice/common</includepath>
+<includepath>${SDK_ROOT}/components/boards</includepath>
+<includepath>${SDK_ROOT}/components/libraries/timer</includepath>
+<includepath>${SDK_ROOT}/components/ble/ble_services/ble_lbs</includepath>
+<includepath>${SDK_ROOT}/components/ble/nrf_ble_qwr</includepath>
+<includepath>${SDK_ROOT}/components/ble/nrf_ble_gatt</includepath>
+<includepath>${SDK_ROOT}/components/libraries/pwr_mgmt</includepath>
+<includepath>../config</includepath>
+<includepath>${SDK_ROOT}/modules/nrfx/hal</includepath>
+<includepath>${SDK_ROOT}/components/ble/ble_link_ctx_manager</includepath>
+<includepath>${SDK_ROOT}/integration/nrfx/legacy</includepath>
+<includepath>${SDK_ROOT}/modules/nrfx/drivers/include</includepath>
+<includepath>${SDK_ROOT}/components/ble/ble_advertising</includepath>
+<includepath>${SDK_ROOT}/components/libraries/bsp</includepath>
+<includepath>${SDK_ROOT}/components/libraries/experimental_section_vars</includepath>
+<includepath>${SDK_ROOT}/components/libraries/util</includepath>
+<includepath>${SDK_ROOT}/components/libraries/delay</includepath>
+<includepath>${SDK_ROOT}/components/libraries/spi_mngr</includepath>
+<includepath>${SDK_ROOT}/modules/nrfx</includepath>
+<includepath>${SDK_ROOT}/integration/nrfx</includepath>
+<includepath>${SDK_ROOT}/modules/nrfx/drivers</includepath>
+<includepath>${SDK_ROOT}/components/libraries/simple_timer</includepath>
+<includepath>${SDK_ROOT}/components/libraries/log</includepath>
+<includepath>${SDK_ROOT}/components/libraries/log/src</includepath>
+<includepath>${SDK_ROOT}/components/libraries/mem_manager</includepath>
+
+</language>
+<language name="C++ Source File">
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="Assembly Source File">
+
+</language>
+<language name="C Source File">
+
+</language>
+<language name="C++ Source File">
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+</cdtprojectproperties>
