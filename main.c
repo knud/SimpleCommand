@@ -578,11 +578,9 @@ int main(void)
   for (;;)
   {
     idle_state_handle();
-    if (m_connected)
+    if (m_connected) // TODO move into idle_state_handle
     {
       command_id_t cc = currentCommand();
-      //    NRF_LOG_INFO("Current command is %d",cc);
-      //    nrf_delay_ms(100);
       switch(cc)
       {
       case NO_COMMAND:
