@@ -47,7 +47,6 @@
  * @date 2019-03-22
  */
 
-//extern "C" {
 
 #include <stddef.h>
 #include "sdk_common.h"
@@ -55,8 +54,6 @@
 #include "ble_cmd.h"
 #include "ble_srv_common.h"
 
-#include "shared.h"
-//}
 
 #define NRF_LOG_MODULE_NAME ble_cmd
 #if BLE_CMD_CONFIG_LOG_ENABLED
