@@ -23,6 +23,8 @@ At that point you can use your preferred method to flash. If you are using the D
 
 `$make hex`
 
+For the Dongle, I recommend using [nRF Connect](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop) to program it. 
+
 The result can be tested using the iOS app from [knud/SimpleBLECommander](https://github.com/knud/SimpleBLECommander)
 ## Issues
 The LED definitions for pca10059 are not set up correctly, so nothing visible happens on the Dongle when it receives commands.
