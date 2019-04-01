@@ -112,7 +112,6 @@ NRF_BLE_QWR_DEF(m_qwr);                                                         
 
 //static bool connected;
 
-static command_id_t m_currentCommand;
 static bool m_connected;
 
 static uint16_t m_conn_handle = BLE_CONN_HANDLE_INVALID;                        // Handle of the current connection.
@@ -439,6 +438,7 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
     m_conn_handle = BLE_CONN_HANDLE_INVALID;
     advertising_start();
     m_connected = false;
+    setCurrentCommand(NO_COMMAND);
     bsp_board_led_off(BLINK_LED_1);
     bsp_board_led_off(BLINK_LED_2);
     break;
@@ -555,8 +555,8 @@ static void idle_state_handle(void)
  */
 int main(void)
 {
-  m_currentCommand = NO_COMMAND;
   m_connected = false;
+
   // Initialize.
   log_init();
   leds_init();

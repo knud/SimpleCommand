@@ -68,7 +68,7 @@ bleEventInitiate(char *message)
         NRF_LOG_INFO("sendError =%d",sendError);
       bytesToSend = 0;
     }
-    nrf_delay_ms(100);
+    nrf_delay_ms(10);
   }
 }
 
@@ -187,12 +187,21 @@ currentCommand()
   return m_command.command.commandID;
 }
 
+void
+setCurrentCommand(command_id_t commandID)
+{
+  m_command.command.commandID = commandID;
+}
+
 int
 noCommand()
 {
   // Check the argLength
   if (m_command.command.argLength != 0)
     return COMMAND_FAILURE;
+
+  // This could be anything, like data from a sensor...
+  bleEventInitiate("No Command received");
 
   return COMMAND_SUCCESS;
 }
@@ -205,6 +214,9 @@ fastBlink()
   if (m_command.command.argLength != 0)
     return COMMAND_FAILURE;
 
+  // This could be anything, like data from a sensor...
+  bleEventInitiate("LED blinking quickly");
+
   return COMMAND_SUCCESS;
 }
 
@@ -214,6 +226,9 @@ slowBlink()
   // Check the argLength
   if (m_command.command.argLength != 0)
     return COMMAND_FAILURE;
+
+  // This could be anything, like data from a sensor...
+  bleEventInitiate("LED blinking slowly");
 
   return COMMAND_SUCCESS;
 }
@@ -225,6 +240,9 @@ altBlink()
   if (m_command.command.argLength != 0)
     return COMMAND_FAILURE;
 
+  // This could be anything, like data from a sensor...
+  bleEventInitiate("Alternating LEDs");
+
   return COMMAND_SUCCESS;
 }
 
@@ -234,6 +252,9 @@ off()
   // Check the argLength
   if (m_command.command.argLength != 0)
     return COMMAND_FAILURE;
+
+  // This could be anything, like data from a sensor...
+  bleEventInitiate("LEDs are off");
 
   return COMMAND_SUCCESS;
 }
@@ -245,6 +266,9 @@ abortCommand()
   // Check the argLength
   if (m_command.command.argLength != 0)
     return COMMAND_FAILURE;
+
+  // This could be anything, like data from a sensor...
+  bleEventInitiate("Aborting (just pretending...)");
 
   // TODO for now
   return COMMAND_SUCCESS;

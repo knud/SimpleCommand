@@ -103,6 +103,9 @@ void executeCommand();
 /*!
  * @brief Initiate a BLE event (notify) to respond to a command with a message.
  *
+ * @details This could be data from a sensor or just an acknowledgement.
+ * Whatever makes sense in your applicaiton...
+ *
  * @param message - the command response message
  */
 void bleEventInitiate(char *message);
@@ -114,5 +117,11 @@ void bleEventInitiate(char *message);
  */
 command_id_t currentCommand();
 
+/*!
+ * @brief Set the current command ID
+ *
+ * @param commandID The command ID
+ */
+void setCurrentCommand(command_id_t commandID);
 
 #endif // _SIMPLE_COMMAND_H
