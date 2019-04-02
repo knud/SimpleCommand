@@ -16,7 +16,7 @@ Clone the project into `<path to>/<nrf52 15.2 sdk directory>/applications/Simple
 $cd <path to>/<nrf52 15.2 sdk directory>/applications/SimpleCommand/simpleCommand
 $cd pca1005x/s140/argmcc/ # either pca10040, pca10056, or pca10059, depending on your target
 $make clean # just to be sure
-#make
+$make
 ```
 
 At that point you can use your preferred method to flash. If you are using the Dongle, then an extra makefile command is availble to create a hex image
