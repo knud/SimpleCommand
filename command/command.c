@@ -19,7 +19,6 @@
 #include <stdbool.h>
 
 #include "app_timer.h"
-#include "nrf52840.h"
 #include "nrf_delay.h"
 #include "nrf_log.h"
 #include "mem_manager.h"
